@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handwritten Digit Recognition</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Handwritten Digit Recognition</h1>
+      <p class="subtitle">Draw a digit</p>
+
+      <div class="instructions">
+        How to use: Make your digit big and centered for best results.
+      </div>
+
+      <div class="canvas-container">
+        <canvas id="drawingCanvas" width="280" height="280"></canvas>
+      </div>
+
+      <div class="controls">
+        <button class="btn-predict" id="predictBtn" onclick="recognizeDigit()">
+          Recognize Digit
+        </button>
+        <button class="btn-clear" onclick="clearCanvas()">Clear Canvas</button>
+      </div>
+
+      <div class="result-container" id="resultContainer">
+        <div style="color: #999; font-size: 18px">
+          The AI is ready to recognize your handwriting!
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>Tips for better recognition:</strong>
+        Draw digits similar to how they appear in printed text.
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
